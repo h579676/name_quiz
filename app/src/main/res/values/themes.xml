@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.App" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariant</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+
+        <item name="textAppearanceButton">@style/TextAppearance.App.Button</item>
+        <item name="materialButtonStyle">@style/Widget.App.Button</item>
+        <item name="tabStyle">@style/Widget.App.TabLayout</item>
+
+        <item name="toolbarStyle">@style/Widget.App.Toolbar</item>
+        <item name="drawerArrowStyle">@style/Widget.App.DrawerArrowToggle</item>
+
+        <item name="appTextAppearanceHeadline1">@style/TextAppearance.App.Headline1</item>
+        <item name="appTextAppearanceHeadline2">@style/TextAppearance.App.Headline2</item>
+        <item name="appTextAppearanceHeadline3">@style/TextAppearance.App.Headline3</item>
+        <item name="appTextAppearanceHeadline4">@style/TextAppearance.App.Headline4</item>
+        <item name="appTextAppearanceSubtitle1">@style/TextAppearance.App.Subtitle1</item>
+        <item name="appTextAppearanceSubtitle2">@style/TextAppearance.App.Subtitle2</item>
+        <item name="appTextAppearanceSubtitle3">@style/TextAppearance.App.Subtitle3</item>
+        <item name="appTextAppearanceBody">@style/TextAppearance.App.Body</item>
+        <item name="appTextAppearanceLink">@style/TextAppearance.App.Link</item>
+        <item name="appTextAppearanceButton">@style/TextAppearance.App.Button</item>
+        <item name="appTextAppearanceError">@style/TextAppearance.App.Error</item>
+    </style>
+
+    <style name="Theme.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/colorPrimary</item>
+        <item name="postSplashScreenTheme">@style/Theme.App</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+    </style>
+
+</resources>

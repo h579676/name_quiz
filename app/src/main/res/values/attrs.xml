@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="appTextAppearanceHeadline1" />
+    <attr name="appTextAppearanceHeadline2" />
+    <attr name="appTextAppearanceHeadline3" />
+    <attr name="appTextAppearanceHeadline4" />
+    <attr name="appTextAppearanceSubtitle1" />
+    <attr name="appTextAppearanceSubtitle2" />
+    <attr name="appTextAppearanceSubtitle3" />
+    <attr name="appTextAppearanceBody" />
+    <attr name="appTextAppearanceLink" />
+    <attr name="appTextAppearanceButton" />
+    <attr name="appTextAppearanceError" />
+</resources>

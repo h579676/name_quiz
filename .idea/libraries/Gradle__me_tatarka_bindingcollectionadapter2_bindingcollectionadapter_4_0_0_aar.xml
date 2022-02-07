@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: me.tatarka.bindingcollectionadapter2:bindingcollectionadapter:4.0.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/474e86d5bd31e0567ea5c46848303c7a/transformed/jetified-bindingcollectionadapter-4.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e0a04b52ead32c0666dd372224bb1e6c/transformed/jetified-bindingcollectionadapter-4.0.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/1e3c7c6f034332cdaefa8a08735c3e88/transformed/jetified-bindingcollectionadapter-4.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1e3c7c6f034332cdaefa8a08735c3e88/transformed/jetified-bindingcollectionadapter-4.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1e3c7c6f034332cdaefa8a08735c3e88/transformed/jetified-bindingcollectionadapter-4.0.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/me.tatarka.bindingcollectionadapter2/bindingcollectionadapter/4.0.0/dead09b783c1fecf360492e5df32000756651513/bindingcollectionadapter-4.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/me.tatarka.bindingcollectionadapter2/bindingcollectionadapter/4.0.0/9930f2d05e7be998b7bb81ebed14d55d3228901e/bindingcollectionadapter-4.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
