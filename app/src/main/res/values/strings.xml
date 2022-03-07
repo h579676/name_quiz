@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">the-name-quiz-app</string>
+    <string name="people_hint">Player %d</string>
+    <string name="start">Start</string>
+    <string name="sort_alphabetical">Sort alphabetical</string>
+    <string name="sort_reverse">Sort reverse</string>
+    <string name="remove">Remove</string>
+    <string name="game">game</string>
+    <string name="home">home</string>
+
+</resources>

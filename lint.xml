@@ -1,0 +1,7 @@
+<lint>
+    <issue id="ObsoleteSdkInt" severity="error"/>
+    <issue id="PrivateResource" severity="warning"/>
+    <issue id="UnusedIds" severity="warning"/>
+    <issue id="UnusedResources" severity="warning"/>
+    <issue id="IconLocation" severity="ignore"/>
+</lint>

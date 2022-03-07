@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.example.the_name_quiz_app.people.PeopleViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/people_fragment_container">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            currentTab="@={viewModel.currentTab}"
+            onTabSelected="@{viewModel.onTabSelected}"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_32"
+            android:padding="@dimen/dimen_4"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sort_alphabetical" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sort_reverse" />
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:endIconMode="clear_text"
+            app:layout_constraintTop_toBottomOf="@id/tab_layout"
+            app:startIconDrawable="@drawable/ic_round_person_add_24">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@{@string/people_hint(viewModel.items.size() + 1)}"
+                android:imeOptions="actionDone"
+                android:inputType="textPersonName"
+                android:onEditorAction="@{(v, actionId, event) -> viewModel.addPlayer()}"
+                android:text="@={viewModel.userInput}"
+                tools:hint="Player 1" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            itemBinding="@{viewModel.itemBinding}"
+            items="@{viewModel.items}"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:clipToPadding="false"
+            android:paddingVertical="@dimen/dimen_16"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textField"
+            app:onPageScrolled="@{viewModel.hideKeyboard}"
+            tools:itemCount="6"
+            tools:listitem="@layout/component_people_item" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

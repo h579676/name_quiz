@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menu_nav_graph"
+    app:startDestination="@id/splash_fragment">
+    <fragment
+        android:id="@+id/splash_fragment"
+        android:name="com.example.the_name_quiz_app.startup.splash.SplashFragment"
+        tools:layout="@layout/fragment_splash"/>
+
+    <fragment
+        android:id="@+id/people_fragment"
+        android:name="com.example.the_name_quiz_app.people.PeopleFragment"
+        tools:layout="@layout/fragment_people"/>
+
+    <fragment
+        android:id="@+id/game_fragment"
+        android:name="com.example.the_name_quiz_app.game.GameFragment"
+        tools:layout="@layout/fragment_game" />
+
+    <action
+        android:id="@+id/to_game"
+        app:destination="@id/game_fragment"
+        app:launchSingleTop="true"
+        app:popUpTo="@+id/menu_nav_graph"
+        app:popUpToInclusive="true" />
+
+    <action
+        android:id="@+id/to_main"
+        app:destination="@id/people_fragment"
+        app:launchSingleTop="true"
+        app:popUpTo="@+id/menu_nav_graph"
+        app:popUpToInclusive="true" />
+</navigation>
